@@ -17,7 +17,7 @@ import WelcomeComponent from "../components/welcome-section/WelcomeComponent.vue
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 800px) {
   .login-wrapper {
     grid-template-columns: 1fr;
   }
