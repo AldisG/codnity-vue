@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import WelcomeComponent from "@/components/WelcomeComponent.vue";
-import LoginWrapper from "@/components/LoginWrapper.vue";
+import LoginWrapper from "../components/login-section/LoginWrapper.vue";
+import WelcomeComponent from "../components/welcome-section/WelcomeComponent.vue";
 </script>
 
 <template>
@@ -9,6 +9,7 @@ import LoginWrapper from "@/components/LoginWrapper.vue";
     <LoginWrapper />
   </div>
 </template>
+
 <style>
 .login-wrapper {
   width: 100%;

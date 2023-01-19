@@ -1,0 +1,20 @@
+<template>
+  <div class="welcome--create-account">
+    <h6 class="welcome--sub-header">Not a member yet?</h6>
+    <span class="welcome--sub-header-info">
+      Please use your personal and company information to Create Account
+    </span>
+    <Button text="Create Account" :accentedButton="false" />
+  </div>
+</template>
+
+<script lang="ts">
+import Button from "../utility/Button.vue";
+
+export default {
+  name: "WelcomeCreateAccount",
+  components: { Button },
+};
+</script>
+
+<style></style>
