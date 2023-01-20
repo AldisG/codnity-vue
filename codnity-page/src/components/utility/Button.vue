@@ -28,20 +28,22 @@ defineProps({
 .button:hover,
 .button:active,
 .button:focus {
-  outline: 2px solid var(--vt-c-white);
   background-color: var(--vt-c-white-transparent);
 }
 .accented {
   background-color: var(--vt-c-accent);
   color: var(--vt-c-black);
+  outline: 1px solid transparent;
+
   outline: none;
   padding: 10px 42px;
+  transition: all 0.2s;
 }
 .accented:hover,
 .accented:active,
 .accented:focus {
   outline: none;
   background-color: var(--vt-c-accent);
-  outline: 2px solid var(--vt-c-black);
+  outline: 1px solid var(--vt-c-black);
 }
 </style>
