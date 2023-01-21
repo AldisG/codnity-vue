@@ -27,4 +27,12 @@ input {
   outline: 1px solid var(--vt-c-dark);
   border-radius: 4px;
 }
+#email:hover,
+#email:active,
+#email:focus,
+#password:hover,
+#password:active,
+#password:focus {
+  outline: 2px solid var(--vt-c-dark);
+}
 </style>

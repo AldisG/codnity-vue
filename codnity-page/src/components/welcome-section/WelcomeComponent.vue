@@ -8,7 +8,7 @@ import WelcomeCreateAccount from "./WelcomeCreateAccount.vue";
     <div class="welcome-and-login-wrapper blank-filter">
       <div class="welcome--content-wrapper">
         <Logo />
-        <h2 class="welcome--slogan">
+        <h2>
           Your Produc Our Priority,<br />
           Shipping made simple.
         </h2>
@@ -26,7 +26,7 @@ import WelcomeCreateAccount from "./WelcomeCreateAccount.vue";
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  color: #fff;
+  color: var(--vt-c-white);
 }
 .blank-filter {
   background-color: #333333cc;
@@ -34,11 +34,11 @@ import WelcomeCreateAccount from "./WelcomeCreateAccount.vue";
   height: 100vh;
 }
 .welcome--content-wrapper {
-  max-width: var(--vt-welcome-size);
   display: grid;
+  align-content: center;
   margin: 0 auto;
-
+  max-width: 1000px;
+  width: 70%;
   gap: 2rem;
 }
-/* .welcome--slogan */
 </style>

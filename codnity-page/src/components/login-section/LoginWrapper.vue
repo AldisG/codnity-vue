@@ -36,9 +36,9 @@ const onSubmitHandler = (e: Event) => {
 
 <style>
 .login--content {
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 60px;
   padding-top: var(--vt-welcome-top-padding);
   color: var(--vt-c-dark);
 }

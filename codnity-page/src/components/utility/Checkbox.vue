@@ -6,9 +6,7 @@
   </label>
 </template>
 
-<script lang="ts">
-export default {};
-</script>
+<script setup lang="ts" />
 
 <style>
 .container {
@@ -22,9 +20,6 @@ export default {};
   -ms-user-select: none;
   user-select: none;
   font-size: 12px;
-}
-.container:hover {
-  text-decoration: underline 1px var(--vt-c-accent);
 }
 
 /* Hide the real checkbox */
