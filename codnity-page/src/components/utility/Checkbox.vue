@@ -23,6 +23,9 @@ export default {};
   user-select: none;
   font-size: 12px;
 }
+.container:hover {
+  text-decoration: underline 1px var(--vt-c-accent);
+}
 
 /* Hide the real checkbox */
 .container input {

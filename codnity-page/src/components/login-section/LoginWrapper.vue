@@ -2,9 +2,11 @@
 import { defineComponent } from "vue";
 import Button from "../utility/Button.vue";
 import Checkbox from "../utility/Checkbox.vue";
+import InputField from "../utility/InputField.vue";
 defineComponent({
   Button,
   Checkbox,
+  InputField,
 });
 const typedInputList = ["email", "password"];
 const onSubmitHandler = (e: Event) => {
@@ -21,13 +23,7 @@ const onSubmitHandler = (e: Event) => {
     </div>
     <form class="login--form" @submit="onSubmitHandler">
       <div v-for="item in typedInputList" :key="item">
-        <input
-          :type="item"
-          :name="item"
-          :id="item"
-          required
-          :placeholder="item.toUpperCase()"
-        />
+        <InputField :inputType="item" />
       </div>
       <div class="login--options-wrapper">
         <Checkbox />
@@ -61,22 +57,21 @@ const onSubmitHandler = (e: Event) => {
   display: grid;
   gap: 4px;
 }
-input {
-  margin-bottom: 14px;
-  color: var(--vt-c-dark);
+.login--options-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
-#email,
-#password {
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-}
+
 .login--forgot-password {
   color: var(--vt-c-black);
   font-size: 14px;
   font-weight: 500;
   position: relative;
   width: max-content;
+  cursor: pointer;
+  user-select: none;
 }
 .login--forgot-password::after {
   content: "";
@@ -84,7 +79,10 @@ input {
   width: 100%;
   bottom: -3px;
   left: 0;
-  height: 3px;
+  height: 2px;
   background-color: var(--vt-c-accent);
+}
+.login--forgot-password:hover::after {
+  height: 3px;
 }
 </style>
