@@ -20,8 +20,12 @@
   -ms-user-select: none;
   user-select: none;
   font-size: 12px;
+  text-decoration: underline 2px transparent;
+  transition: text-decoration 0.3s;
 }
-
+.container:hover {
+  text-decoration: underline 2px var(--vt-c-accent);
+}
 /* Hide the real checkbox */
 .container input {
   position: absolute;

@@ -7,7 +7,6 @@
 <script setup lang="ts"></script>
 <style>
 .image--logo {
-  /* max-width: 600px; */
   width: 100%;
 }
 </style>

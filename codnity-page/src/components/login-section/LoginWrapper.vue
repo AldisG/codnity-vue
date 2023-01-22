@@ -9,9 +9,9 @@ defineComponent({
   InputField,
 });
 const typedInputList = ["email", "password"];
+
 const onSubmitHandler = (e: Event) => {
   e.preventDefault();
-  // console.log(e.target[0].value);
 };
 </script>
 
