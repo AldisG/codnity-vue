@@ -1,4 +1,9 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
   --vt-c-white: #fff;
+  --vt-c-white-transparent: #ffffff33;
+  --vt-c-black: #1c1c1c;
+  --vt-c-dark: #606161;
+  --vt-c-accent: #fed800;
+  --vt-welcome-top-padding: 160px;
+  --vt-welcome-x-padding: 100px;
 }
