@@ -4,7 +4,9 @@
     <span class="welcome--sub-header-info">
       Please use your personal and company information to Create Account
     </span>
-    <Button text="Create Account" :accentedButton="false" />
+    <div class="position-flex-center">
+      <Button text="Create Account" :accentedButton="false" />
+    </div>
   </div>
 </template>
 

@@ -15,6 +15,7 @@
       :onblur="handleBlur"
       required
       v-model="inputText"
+      :minlength="inputType == 'password' ? 6 : 0"
     />
   </label>
 </template>
@@ -29,7 +30,6 @@ const inputFocused = ref(false);
 
 const handleFocus = () => {
   inputFocused.value = true;
-  console.log(inputText);
 };
 const handleBlur = () => {
   inputFocused.value = false;

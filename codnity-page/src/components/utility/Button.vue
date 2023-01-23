@@ -13,9 +13,10 @@ defineProps({
 
 <style>
 .button {
+  margin-top: 8px;
   font-size: 14px;
   font-weight: normal;
-  padding: 10px 32px;
+  padding: 10px 20px;
   outline: 1px solid var(--vt-c-white);
   color: var(--vt-c-white);
   background-color: transparent;
@@ -23,7 +24,7 @@ defineProps({
   border-radius: 6px;
   cursor: pointer;
   width: max-content;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 .button:hover,
 .button:active,

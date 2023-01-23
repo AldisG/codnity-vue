@@ -29,7 +29,9 @@ const onSubmitHandler = (e: Event) => {
         <Checkbox />
         <div class="login--forgot-password">Forgot password?</div>
       </div>
-      <Button :accentedButton="true" text="Log in" />
+      <div class="position-flex-end">
+        <Button :accentedButton="true" text="Log in" />
+      </div>
     </form>
   </div>
 </template>
@@ -39,7 +41,6 @@ const onSubmitHandler = (e: Event) => {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding-top: var(--vt-welcome-top-padding);
   color: var(--vt-c-dark);
 }
 .login--headers {
@@ -55,7 +56,7 @@ const onSubmitHandler = (e: Event) => {
 }
 .login--form {
   display: grid;
-  gap: 4px;
+  gap: 8px;
 }
 .login--options-wrapper {
   display: flex;
@@ -79,10 +80,14 @@ const onSubmitHandler = (e: Event) => {
   width: 100%;
   bottom: -3px;
   left: 0;
-  height: 2px;
+  height: 1px;
   background-color: var(--vt-c-accent);
+  transition: height 0.3s;
 }
 .login--forgot-password:hover::after {
   height: 3px;
+}
+.position-flex-end {
+  justify-self: flex-end;
 }
 </style>
