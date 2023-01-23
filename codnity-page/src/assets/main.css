@@ -33,7 +33,6 @@ body {
   }
   .welcome-and-login-wrapper {
     padding: 80px;
-    padding-top: var(--vt-welcome-top-padding);
   }
   .welcome--container {
     text-align: center;
@@ -61,6 +60,5 @@ body {
 @media screen and (max-width: 500px) {
   .welcome-and-login-wrapper {
     padding: 40px;
-    padding-top: var(--vt-welcome-top-padding);
   }
 }
